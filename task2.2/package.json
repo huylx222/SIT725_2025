@@ -1,0 +1,12 @@
+{
+  "name": "simple-calculator-server",
+  "version": "1.0.0",
+  "description": "Simple Express server to add numbers via URL",
+  "main": "js/scripts.js",
+  "scripts": {
+    "start": "node js/scripts.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
