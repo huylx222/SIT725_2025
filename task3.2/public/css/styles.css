@@ -1,0 +1,109 @@
+.navbar-size {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.user-image-size {
+    height: 56px;
+    margin: 4px 0;
+}
+
+.main-body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: calc(100vh - 64px);
+}
+
+.materialboxed-image {
+    margin: 0 auto;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.click-me-button {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a52) !important;
+    margin-top: 50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(238, 90, 82, 0.4);
+}
+
+.click-me-button:hover {
+    box-shadow: 0 6px 20px rgba(238, 90, 82, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Navigation styling */
+nav {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-title {
+    font-weight: 600;
+}
+
+.card .card-content a {
+    color: #667eea;
+    font-weight: 500;
+}
+
+.card .card-content a:hover {
+    color: #764ba2;
+}
+
+/* Modal styling */
+.modal {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal .modal-content {
+    padding: 30px;
+}
+
+.modal .btn {
+    background: linear-gradient(45deg, #667eea, #764ba2) !important;
+    border-radius: 20px;
+}
+
+.modal .btn:hover {
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.input-field input:focus + label {
+    color: #667eea !important;
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 2px solid #667eea !important;
+    box-shadow: 0 1px 0 0 #667eea !important;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .materialboxed-image {
+        height: 250px;
+    }
+    
+    .main-body {
+        padding: 20px 0;
+    }
+}
