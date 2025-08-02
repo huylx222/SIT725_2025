@@ -1,0 +1,21 @@
+{
+    "name": "sit725-prac5-mvc-original",
+    "version": "1.0.0",
+    "description": "SIT 725 Prac 5 - MVC version of original Prac 3/4 code",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "keywords": [
+        "nodejs",
+        "express",
+        "mvc",
+        "sit725"
+    ],
+    "author": "SIT 725 Student",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.21.2"
+    }
+}
