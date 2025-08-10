@@ -1,7 +1,6 @@
-// models/index.js - MongoDB model for our kitten projects
 const mongoose = require('mongoose');
 
-// Define the Project Schema - blueprint for our kitten cards
+// Define the Project Schema - blueprint for kitten cards
 const ProjectSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -22,10 +21,9 @@ const ProjectSchema = new mongoose.Schema({
         trim: true
     }
 }, {
-    timestamps: true // Automatically adds createdAt and updatedAt fields
+    timestamps: true 
 });
 
-// Create and export the Project model
 const Project = mongoose.model('Project', ProjectSchema);
 
 module.exports = {

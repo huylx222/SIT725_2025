@@ -1,4 +1,3 @@
-// services/projectService.js - Database operations for kitten projects
 const { Project } = require('../models');
 
 const projectService = {

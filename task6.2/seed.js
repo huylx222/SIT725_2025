@@ -1,4 +1,3 @@
-// seed.js - Populate database with your original kitten data
 const mongoose = require('mongoose');
 const { projectService } = require('./services');
 
@@ -8,7 +7,6 @@ mongoose.connect('mongodb://localhost:27017/myprojectDB', {
     useUnifiedTopology: true,
 });
 
-// Your original kitten data
 const kittenProjects = [
     {
         title: "Kitten 2",
@@ -30,7 +28,6 @@ const seedDatabase = async () => {
         const existingProjects = await projectService.getAllProjects();
         console.log(`📊 Found ${existingProjects.length} existing projects`);
         
-        // Only seed if database is empty
         if (existingProjects.length === 0) {
             console.log('Inserting kitten projects...');
             const createdProjects = [];
@@ -56,7 +53,6 @@ const seedDatabase = async () => {
     } catch (error) {
         console.error('Error seeding database:', error);
     } finally {
-        // Close connection
         mongoose.connection.close();
         console.log('Database connection closed');
         console.log('Seeding process completed!');

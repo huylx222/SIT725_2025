@@ -1,5 +1,3 @@
-// public/js/scripts.js - Your original frontend code, unchanged
-
 const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
 }
@@ -13,7 +11,7 @@ const submitForm = () => {
     console.log("Form Data Submitted: ", formData);
 }
 
-// This function now calls your MVC API
+// Function calls MVC API
 const getProjects = () => {
     $.get('/api/projects', (response) => {
         if(response.statusCode == 200) {
