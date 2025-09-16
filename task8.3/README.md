@@ -6,18 +6,18 @@
 ## Quick Start
 
 ### Clone the repository:
-```bash
+```
 git clone https://github.com/huylx222/SIT725_2025
 cd SIT725_2025/task8.3
 ```
 
 ### Build and start all services:
-```bash
+```
 bashdocker-compose up --build
 ```
 
 ### Stop all services:
-```bash
+```
 bashdocker-compose down
 ```
 
