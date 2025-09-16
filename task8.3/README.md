@@ -26,3 +26,6 @@ bashdocker-compose down
 * Backend API: http://localhost:4000
 * Student Endpoint: http://localhost:4000/api/student
 * Health Check: http://localhost:4000/api/v1/health
+
+### Expected Output For Student Endpoint:
+![alt text](image-1.png)
